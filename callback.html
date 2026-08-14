@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tesla Login Redirect...</title>
+</head>
+<body>
+    <p>Redirecting back to your local app...</p>
+    <script>
+        const params = window.location.search;
+        window.location.href = "http://localhost:4000/api/auth/callback" + params;
+    </script>
+</body>
+</html>
